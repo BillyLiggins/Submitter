@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+if __name__ == "__main__":
+  from submitter import submitter
+  from optparse import OptionParser
+  parser = OptionParser()
+  parser.add_option("-I", "--input_folder", dest="folder",
+          help="Top level folder for scripts.",default=".", metavar="OUTPUTFOLDER")
+  parser.add_option("-N", "--jobMax", dest="jobMax",
+          help="Maximum number of jobs this program can submit.",type="int",default=10, metavar="JOBMAX")
+  (options, args) = parser.parse_args()
+
+  submitter.main(options)

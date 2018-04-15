@@ -8,4 +8,5 @@ setup(name='submitter',
       author_email='billyliggins@gmail.com',
       license='MIT',
       packages=['submitter'],
+      scripts=['bin/submitter'],
       zip_safe=False)
