@@ -8,5 +8,8 @@ setup(name='submitter',
       author_email='billyliggins@gmail.com',
       license='MIT',
       packages=['submitter'],
+      package_dir={'submitter': 'submitter'},
+      package_data={'': ['config/config.ini']},
       scripts=['bin/submitter'],
-      zip_safe=False)
+      zip_safe=False
+      )
