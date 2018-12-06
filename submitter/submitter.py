@@ -11,6 +11,7 @@ import configparser
 from string import Template
 import logging
 import logzero
+import numpy as np
 from logzero import logger
 
 '''
@@ -179,7 +180,7 @@ def main(options):
         logger.info("Batch log folder exists.")
         # logger.exception(e)
 
-    for script in glob(options.folder+"/*"):
+    for script in np.sort(glob(options.folder+"/*")):
         print os.path.basename(script)
 
         print os.path.join(options.folder, script)
