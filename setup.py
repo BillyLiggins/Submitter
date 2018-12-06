@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='submitter',
-      version='0.1',
+      version='0.4',
       description='Simple SGE job submitter.',
       url='https://github.com/BillyLiggins/Submitter',
       author='Billy Liggins',
