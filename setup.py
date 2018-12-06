@@ -11,5 +11,8 @@ setup(name='submitter',
       package_dir={'submitter': 'submitter'},
       package_data={'': ['config/config.ini']},
       scripts=['bin/submitter'],
+      install_requires=[
+          'logzero',
+      ],
       zip_safe=False
       )
